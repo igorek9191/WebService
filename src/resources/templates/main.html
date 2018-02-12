@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org/" lang="ru">
+<head>
+    <title>Шаблонная страница</title>
+</head>
+<body>
+    <h1>Приложение поиска текста в файловой системе компьютера</h1>
+    <form action="#" th:action="@{/greeting/('search')}" method="get">
+        <label>Введите текст для поиска: </label>
+        <input type="text" id="search" name="search" />
+        <p><input type="submit" value="Отправить" /></p>
+    </form>
+
+</body>
+</html>
